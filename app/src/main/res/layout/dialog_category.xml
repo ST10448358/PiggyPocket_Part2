@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Category"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="#9E9E9E" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category Name"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_dialog_input"
+            android:hint="e.g., Groceries"
+            android:inputType="textCapWords"
+            android:paddingHorizontal="16dp"
+            android:textColor="#333333"
+            android:textColorHint="#9E9E9E"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Budget Limit (Optional)"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCategoryBudget"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_dialog_input"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="16dp"
+            android:textColor="#333333"
+            android:textColorHint="#9E9E9E"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Icon"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <GridLayout
+                android:id="@+id/gridIcons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="12">
+
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="🛒" android:text="🛒" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="🚗" android:text="🚗" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="🎬" android:text="🎬" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="💡" android:text="💡" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="🛍️" android:text="🛍️" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="🏠" android:text="🏠" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="🍔" android:text="🍔" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="✈️" android:text="✈️" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="💊" android:text="💊" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="📚" android:text="📚" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="👕" android:text="👕" android:textSize="20sp" />
+                <TextView android:layout_width="44dp" android:layout_height="44dp" android:layout_margin="4dp" android:background="@drawable/bg_icon_selector" android:gravity="center" android:tag="🎮" android:text="🎮" android:textSize="20sp" />
+            </GridLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Color"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layoutColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#66BB6A" android:tag="#66BB6A" />
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#42A5F5" android:tag="#42A5F5" />
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#FFA726" android:tag="#FFA726" />
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#EF5350" android:tag="#EF5350" />
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#AB47BC" android:tag="#AB47BC" />
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#EC407A" android:tag="#EC407A" />
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#4DD0E1" android:tag="#4DD0E1" />
+                <View android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:background="@drawable/bg_color_dot" android:backgroundTint="#9CCC65" android:tag="#9CCC65" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F5F5F5"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="14dp" />
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_dashboard_top"
+                android:text="✓ Create"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:cornerRadius="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
