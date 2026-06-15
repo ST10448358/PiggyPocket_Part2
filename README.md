@@ -22,7 +22,7 @@ It allows users to track income, monitor expenses, and maintain financial discip
     <img src="https://img.shields.io/badge/View%20Code-GitHub-black?style=for-the-badge&logo=github"><br>
   </a>
 
-  <a href="https://youtu.be/9hrFypdLx2o">
+  <a href="https://youtu.be/VtnVBGcxhJQ">
     <img src="https://img.shields.io/badge/Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube">
   </a>
 </p>
